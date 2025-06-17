@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>Credit Card Fraud Detection</h1>
+
+    <form id="prediction-form">
+        <label for="scaled_time">Scaled Time:</label>
+        <input type="text" id="scaled_time" name="scaled_time"><br><br>
+
+        <label for="scaled_amount">Scaled Amount:</label>
+        <input type="text" id="scaled_amount" name="scaled_amount"><br><br>
+
+        <!-- Only entering some V values -->
+        <label for="V1">V1:</label>
+        <input type="text" id="V1" name="V1"><br><br>
+
+        <label for="V2">V2:</label>
+        <input type="text" id="V2" name="V2"><br><br>
+
+        <label for="V3">V3:</label>
+        <input type="text" id="V3" name="V3"><br><br>
+
+        <!-- You can add more V's if you want -->
+        <!-- Other values will automatically be treated as 0.0 if not filled -->
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
